@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ClienteFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome Cliente:" />
+
+        <EditText
+            android:id="@+id/nomeCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insira o nome" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telefone Cliente:" />
+
+        <EditText
+            android:id="@+id/telefoneCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insira o telefone"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/btnSalvarCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvar Cliente" />
+
+        <ListView
+            android:id="@+id/listViewCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</FrameLayout>
